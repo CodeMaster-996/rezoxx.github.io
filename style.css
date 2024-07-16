@@ -9,11 +9,19 @@
 }
 
 * {
-    padding: 0;
-    margin: 0;
     font-family: Gladly;
     color: #000000;
     box-sizing: border-box;
+}
+
+.ifc {
+    width: 100vw;
+    height: 50vw;
+    display: flex;
+    position: relative;
+    margin-top: 1vh;
+    background-color: #0000001a;
+    z-index: 9;
 }
 
 body::-webkit-scrollbar{
@@ -21,12 +29,12 @@ body::-webkit-scrollbar{
 }
 
 html,body{
-    background-image: url("./assets/images/wavy-black-white-background.jpg");
+    background-image: url("./assets/images/2.jpg");
     background-size:cover;
-    margin: 0;
+    margin: auto;
     padding: 0;
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     overflow-x: hidden;
 
 }
@@ -41,7 +49,7 @@ html,body{
 }
 
 #logon{
-    height: 120%;
+    width: 20vh;
     margin: auto;
     display: flex;
     align-items: center;
@@ -63,10 +71,24 @@ html,body{
 
 nav{
     background-color: rgba(0, 0, 0, 0.021);
-    width: 100%;
+    width: 100vw;
+    height: 8%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: absolute;
+}
+
+#REZ{
+    position: absolute;
+    height: 8vh;
+    font-size: 2vh;
+    width: 50vh;
+    left: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
 }
 
 #nav-part2{
@@ -81,9 +103,7 @@ nav{
     background-color: #ffffff;
     border-radius: 50px;
     position: relative;
-    right: 2vh;
-    
-    font-size: 18;
+    font-size: 15;
     overflow: hidden;
 }
 
@@ -127,15 +147,17 @@ nav{
     padding-bottom: 2vw;
 }
 #left h3{
-    width: 40vh;
+    width: 45vw;
     font-size: 2vh;
-    line-height: 3vh;
+    line-height: 2vh;
+    padding-left: 3%;
+    font-family:Neog;
 }
 
 #right h2{
     color: #ffffff;
     padding-bottom: 10%;
-    padding-right: 5vh;
+    margin: auto;
 }
 
 #center h2{

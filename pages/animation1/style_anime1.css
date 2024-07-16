@@ -1,0 +1,142 @@
+@font-face {
+    font-family: anime1;
+    src: url(/assets/fonts/MoongladeDemoBold-jOzM.ttf);
+}
+
+*{
+    font-family: anime1;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    background-color: #010111;
+    display: flex;
+    width: 100vw;
+}
+
+a{
+    color: white;
+    position: relative;
+}
+
+#text{
+    position: absolute;
+    display: flex;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 20vh;
+}
+
+#Text{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.container1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100vw;
+    height: 25vw;
+    top: 0;
+}
+.container2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100vw;
+    height: 25vw;
+    top: 0;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100vw;
+    height: 50vw;
+}
+
+.tnd{
+    position: absolute;
+    width: 100vw;
+    height: 25vw;
+    bottom: 0;
+}
+
+.button{
+    font-weight: 500;
+    border-radius: 2em;
+    padding: 0.75rem 1.5rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    transform: scale(1.1);
+    transition: 0.2s ease-in-out;
+}
+.button2{
+    font-weight: 700;
+    border-radius: 5px;
+    padding: 0.75rem 1.5rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    transform: scale(1.1);
+    transition: 0.2s ease-in-out;
+}
+
+.button-gradient{
+    position: absolute;
+    background: linear-gradient(
+        120deg,
+        rgb(253, 22, 72) 0%,
+        rgb(40, 12, 199) 80%
+    );
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    border-radius: 2em;
+    box-shadow: -5px 0 10px rgb(253, 22, 72),
+                5px 0 10px rgb(40, 12, 199)
+    ;
+    transform: translateY(10px);
+}
+
+.button-gradient2{
+    position: absolute;
+    background: linear-gradient(
+        120deg,
+        rgb(255, 123, 0) 0%,
+        rgb(234, 0, 255) 80%
+    );
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    border-radius: 5px;
+    box-shadow: -5px 0 10px rgb(255, 123, 0),
+                5px 0 10px rgb(234, 0, 255)
+    ;
+}
+
+.button:hover{
+    transform: translateY(10px);
+    box-shadow: -10px 0 50px rgb(253, 22, 72),
+                10px 0 50px rgb(40, 12, 199)
+    ;
+}
+.button2:hover{
+    box-shadow: -10px 0 50px rgb(255, 123, 0),
+                10px 0 50px rgb(234, 0, 255)
+    ;
+}
