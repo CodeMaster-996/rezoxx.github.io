@@ -1,11 +1,11 @@
 @font-face {
     font-family: Gladly;
-    src: url(./assets/fonts/FeelingSoon-1GVr0.otf);
+    src: url(/assets/fonts/FeelingSoon-1GVr0.otf);
 }
 @font-face {
     
     font-family: Neog;
-    src: url(./assets/fonts/AboveDemoRegular-lJMd.ttf);
+    src: url(/assets/fonts/AboveDemoRegular-lJMd.ttf);
 }
 
 * {
