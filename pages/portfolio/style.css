@@ -19,8 +19,8 @@
     --bg-color: #080808;
     --text-color: #ffffff;
     --second-bg-color: #1d1d1d;
-    --main-color: #9900ff;
-    --second-color: #ff0040;
+    --main-color: #ff004c;
+    --second-color: #d400ff;
 }
 
 html{
@@ -88,7 +88,7 @@ body{
 
 section{
     min-height: 100vh;
-    padding: 10rem 12% 10rem;
+    padding: 5rem 5% 5rem;
 }
 .home{
     display: flex;
@@ -366,6 +366,99 @@ span:hover{
 }
 
 ::-webkit-scrollbar-track{
-    background-color: var(--bg-color);
+    background-color: var(--main-color);
     width: 50px;
 }
+
+.services{
+    background:var(--bg-color);
+    color: #000;
+}
+
+.services h2{
+    margin-bottom: 5rem;
+    color: white;
+}
+.services-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+.service-box{
+    background-color: var(--main-color);
+    height: 300px;
+    border-radius: 3rem;
+    border: 5px solid transparent;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+    overflow: hidden;
+}
+.service-box:hover{
+    background: var(--second-bg-color);
+    color: #ffffff;
+    border: 5px solid var(--main-color);
+    transform: scale(1.03);
+}
+
+.service-box .service-info{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    max-height: 200px;
+    justify-content: left;
+    align-items: baseline;
+    padding: 5rem 5rem;
+}
+.service-info h4{
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 2;
+}
+
+.service-info p{
+    font-size: 1.6rem;
+    font-weight: 600;
+    max-width: 600px;
+    line-height: 1.7;
+    margin: auto;
+}
+
+.projects{
+    background-color: var(--second-bg-color);
+}
+.projects-box{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+.project-card{
+    background-color: var(--second-bg-color);
+    height: 300px;
+    width: 200px;
+    border-radius: 3rem;
+    border: 5px solid transparent;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+    overflow: hidden;
+}
+
+.project-card:hover{
+    box-shadow: 0 0 25px var(--second-color),
+                0 0 50px var(--second-color);
+    transform: scale(1.02);
+}
+.project-card img{
+    max-width: 100px;
+    border-radius: 2em;
+    object-fit: cover;
+}
+.project-card h3{
+    font-size: 3rem;
+}
+.project-card p{
+    font-size: 1.6rem;
+}
+
+
